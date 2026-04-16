@@ -269,15 +269,17 @@ h3 {
 .hero-photo {
     margin: 0;
     padding: 0.8rem;
-    align-self: stretch;
+    align-self: start;
+    max-width: 260px;
+    justify-self: end;
 }
 
 .hero-photo img {
     display: block;
     width: 100%;
-    height: 100%;
-    min-height: 420px;
-    object-fit: cover;
+    height: auto;
+    max-height: 360px;
+    object-fit: contain;
     border-radius: calc(var(--radius-lg) - 8px);
 }
 
@@ -464,7 +466,8 @@ h3 {
     }
 
     .hero-photo {
-        max-width: 520px;
+        max-width: 260px;
+        justify-self: start;
     }
 }
 
@@ -489,10 +492,11 @@ h3 {
 
     .hero-photo {
         padding: 0.7rem;
+        max-width: 220px;
     }
 
     .hero-photo img {
-        min-height: 320px;
+        max-height: none;
     }
 
     h1 {
